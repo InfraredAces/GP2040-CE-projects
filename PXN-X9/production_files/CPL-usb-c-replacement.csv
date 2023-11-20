@@ -1,0 +1,5 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+J1,Conn_01x05,PinHeader_1x05_P2.00mm_Vertical,138.5,-85.5,90.0,top
+R1,5.1k,R_0402_1005Metric,135.5,-79.75,-90.0,top
+R2,5.1k,R_0402_1005Metric,139.75,-79.75,-90.0,top
+USB1,HRO-TYPE-C-31-M-12,HRO-TYPE-C-31-M-12-Assembly,138.5,-68.8375,180.0,top
