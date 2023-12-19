@@ -79,7 +79,7 @@ USB Passthrough is available through the PXN-X9's USB port and is external to th
 
 This board is not necessary as an immediate replacement, but is available should the need to replace the USB-C port on the PXN-X0 come up.
 
-Wires will need to be soldered onto the
+Wires will need to be soldered into the through holes on the board, matching that of the original board. Either the cable can either be terminated in JST XH-5P 2.50mm male to connect to J1 or tinned and use with the USB Data screw terminals (J14).
 
 ### LED Replacement Board
 
@@ -87,11 +87,9 @@ Wires will need to be soldered onto the
 
 The preexisting LED board that comes with the PXN-X9 does not work with the primary controller PCB replacement board as they are not addressable. Another LED board is necessary for the use of LEDs with this board.
 
-This board is currently a work in progress. The data pin for `LED_DATA` is 3.3V logic and will need to be converted to 5V logic for addressable RGB LEDs to function properly. This logic shifter will be included on the LED Replacement Board itself in the event that the `LED_DATA` pin is needed for some other application.
+The data pin for `LED_DATA` is 3.3V logic and needs to be converted to 5V logic for addressable RGB LEDs to function properly. This logic shifter is included on the LED Replacement Board itself rather than the primary control board in the event that the `LED_DATA` pin is needed for some other application.
 
 ## Assembly
-
-NOTE: This applies to the Main Control Board and the LED Replacement Board only.
 
 These boards are designed to be made and assembled by JLCPCB. As such, you will find a folder called `production_files` that contains a copy of the three files needed to have each of these 3 boards made by JLCPCB.
 
