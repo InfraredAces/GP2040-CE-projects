@@ -18,31 +18,31 @@
 // Please note that only when `PIN_SLIDER_ONE` and  `PIN_SLIDER_TWO` are set to `-1` will the button combo shortcut for DP/LS/RS work.
 // The buttons are listed in GP2040 configuration, beside each the listed order is *GP2040 / Xinput / Switch / PS3 / Directinput / Arcade*
 
-#define PIN_DPAD_UP     25           // UP
-#define PIN_DPAD_DOWN   24           // DOWN
-#define PIN_DPAD_RIGHT  27           // RIGHT
-#define PIN_DPAD_LEFT   26           // LEFT
-#define PIN_BUTTON_B1   0           // B1 / A / B / Cross / 2 / K1
-#define PIN_BUTTON_B2   3           // B2 / B / A / Circle / 3 / K2
-#define PIN_BUTTON_R2   5          // R2 / RT / ZR / R2 / 8 / K3
-#define PIN_BUTTON_L2   4           // L2 / LT / ZL / L2 / 7 / K4
-#define PIN_BUTTON_B3   1          // B3 / X / Y / Square / 1 / P1
-#define PIN_BUTTON_B4   29          // B4 / Y / X / Triangle / 4 / P2
-#define PIN_BUTTON_R1   28          // R1 / RB / R / R1 / 6 / P3
-#define PIN_BUTTON_L1   2          // L1 / LB / L / L1 / 5 / P4
-#define PIN_BUTTON_S1   23          // S1 / Back / Minus / Select / 9 / Coin
-#define PIN_BUTTON_S2   22          // S2 / Start / Plus / Start / 10 / Start
-#define PIN_BUTTON_L3   13          // L3 / LS / LS / L3 / 11 / LS
-#define PIN_BUTTON_R3   16          // R3 / RS / RS / R3 / 12 / RS
-#define PIN_BUTTON_A1   21          // A1 / Guide / Home / PS / 13 / ~
-#define PIN_BUTTON_A2   -1          // A2 / ~ / Capture / ~ / 14 / ~
-#define PIN_BUTTON_FN   -1          // Hotkey Function
-#define PIN_BUTTON_TURBO -1         // Turbo
-#define PIN_BUTTON_REVERSE -1       // UDLR Reverse
-#define PIN_SLIDER_ONE    19         // Left Stick Slider
-#define PIN_SLIDER_TWO    18         // Right Stick Slider
-#define PIN_SLIDER_SOCD_ONE    -1         // SOCD Slider Pin One
-#define PIN_SLIDER_SOCD_TWO    -1         // SOCD Slider Pin Two
+#define PIN_DPAD_UP     25                     // UP
+#define PIN_DPAD_DOWN   24                     // DOWN
+#define PIN_DPAD_RIGHT  27                     // RIGHT
+#define PIN_DPAD_LEFT   26                     // LEFT
+#define PIN_BUTTON_B1   0                      // B1 / A / B / Cross / 2 / K1
+#define PIN_BUTTON_B2   3                      // B2 / B / A / Circle / 3 / K2
+#define PIN_BUTTON_R2   5                      // R2 / RT / ZR / R2 / 8 / K3
+#define PIN_BUTTON_L2   4                      // L2 / LT / ZL / L2 / 7 / K4
+#define PIN_BUTTON_B3   1                      // B3 / X / Y / Square / 1 / P1
+#define PIN_BUTTON_B4   29                     // B4 / Y / X / Triangle / 4 / P2
+#define PIN_BUTTON_R1   28                     // R1 / RB / R / R1 / 6 / P3
+#define PIN_BUTTON_L1   2                      // L1 / LB / L / L1 / 5 / P4
+#define PIN_BUTTON_S1   23                     // S1 / Back / Minus / Select / 9 / Coin
+#define PIN_BUTTON_S2   22                     // S2 / Start / Plus / Start / 10 / Start
+#define PIN_BUTTON_L3   13                     // L3 / LS / LS / L3 / 11 / LS
+#define PIN_BUTTON_R3   16                     // R3 / RS / RS / R3 / 12 / RS
+#define PIN_BUTTON_A1   21                     // A1 / Guide / Home / PS / 13 / ~
+#define PIN_BUTTON_A2   -1                     // A2 / ~ / Capture / ~ / 14 / ~
+#define PIN_BUTTON_FN   -1                     // Hotkey Function
+#define PIN_BUTTON_TURBO -1                    // Turbo
+#define PIN_BUTTON_REVERSE -1                  // UDLR Reverse
+#define PIN_SLIDER_ONE    19                   // Left Stick Slider
+#define PIN_SLIDER_TWO    18                   // Right Stick Slider
+#define PIN_SLIDER_SOCD_ONE    -1              // SOCD Slider Pin One
+#define PIN_SLIDER_SOCD_TWO    -1              // SOCD Slider Pin Two
 #define SLIDER_MODE_ONE DPAD_MODE_LEFT_ANALOG
 #define SLIDER_MODE_TWO DPAD_MODE_RIGHT_ANALOG
 #define SLIDER_MODE_ZERO DPAD_MODE_DIGITAL
@@ -69,27 +69,27 @@
 #define DEFAULT_INPUT_MODE INPUT_MODE_XINPUT //INPUT_MODE_XINPUT (XInput), INPUT_MODE_SWITCH (Nintendo Switch), INPUT_MODE_HID (D-Input), INPUT_MODE_KEYBOARD (Keyboard)
 #define DEFAULT_DPAD_MODE DPAD_MODE_DIGITAL  //DPAD_MODE_DIGITAL, DPAD_MODE_LEFT_ANALOG, DPAD_MODE_RIGHT_ANALOG, 
 
-#define DEFAULT_PS4CONTROLLER_TYPE PS4_CONTROLLER
+#define DEFAULT_PS4CONTROLLER_TYPE PS4_ARCADESTICK
 
 // This is the LEDs section.
 // The default `TURBO_LED_PIN` pin is set to `15` ( it is recommended to run through 3V3(OUT) with a resistor)
 // The Turbo LED will flash at a speed consistant with the set speed of the Turbo when a Turbo button is active.
 // It is recommended to disable the `TURBO_LED_PIN` by setting it to `-1` if you are sensitive of flashing lights.
 // The default `BOARD_LEDS_PIN` pin is set to `28`.
-// The board LED pin will allow you to connect addressible RGB LEDs on the Pico.
-// Addressible RGB LEDs should be connected to the `VBUS` pin (#40), an avalible ground pin and the defined `BOARD_LEDS_PIN`.
-// Special note - You should only ever use addressible RGB LEDs that are rated for 5v operation on the Pico.
-// The defualt `LED_BRIGHTNESS_MAXIMUM` value is `50`.  
+// The board LED pin will allow you to connect addressable RGB LEDs on the Pico.
+// addressable RGB LEDs should be connected to the `VBUS` pin (#40), an available ground pin and the defined `BOARD_LEDS_PIN`.
+// Special note - You should only ever use addressable RGB LEDs that are rated for 5v operation on the Pico.
+// The default `LED_BRIGHTNESS_MAXIMUM` value is `50`.  
 // This will change how bright the LEDs are with `0` being off and `100` being full brightness.
 // The minimum `LED_BRIGHTNESS_MAXIMUM` value is `0`.
 // The maximum `LED_BRIGHTNESS_MAXIMUM` value is `100`.
-// The defualt `LED_BRIGHTNESS_STEPS` value is `5`.
+// The default `LED_BRIGHTNESS_STEPS` value is `5`.
 // This will change how many brightness steps there are when increasing or decreasing the brightness of the LEDs via the onboard shortcut.
 // It is recommend to keep this value at `5` or `10`.
-// The defualt `LED_FORMAT` is `LED_FORMAT_GRB`.
-// You can also choose the `LED_FORMAT` of `LED_FORMAT_RGB` if your addressible RGB LEDs are not working as intended.
-// The defualt `LEDS_PER_PIXEL` is set to `1`.
-// This will change how many addressible RGB LEDs there are per button.
+// The default `LED_FORMAT` is `LED_FORMAT_GRB`.
+// You can also choose the `LED_FORMAT` of `LED_FORMAT_RGB` if your addressable RGB LEDs are not working as intended.
+// The default `LEDS_PER_PIXEL` is set to `1`.
+// This will change how many addressable RGB LEDs there are per button.
 // The default LEDS_[BUTTON] is an order and has nothing to do with what GPIO pin something is connected to.
 // Unless you are planning on running custom animations I would recommmend you leave this as is.
 
@@ -97,7 +97,7 @@
 
 #define BOARD_LEDS_PIN 6
 
-#define LED_BRIGHTNESS_MAXIMUM 50
+#define LED_BRIGHTNESS_MAXIMUM 80
 #define LED_BRIGHTNESS_STEPS 5
 #define LED_FORMAT LED_FORMAT_GRB
 #define LEDS_PER_PIXEL 2
@@ -117,13 +117,13 @@
 
 // This is the Player LED section.  
 // In this section you can specify if Player LEDs will be active, and, if active, which pins will be used for them.
-// The defualt is `PLED_TYPE_NONE` which will turn the Player LEDs off.
+// The default is `PLED_TYPE_NONE` which will turn the Player LEDs off.
 // The default pin for each Player LED is `-1` which disables it.  
 // To enable a `PLED#_PIN`, replace the `-1` with the GPIO pin number that is desired. 
 // There are three options for `PLED_TYPE` currently:
 // 1 - `PLED_TYPE_NONE` - This will disable the Player LEDs
 // 2 - `PLED_TYPE_PWM` - This will enable the Player LEDs ( it is recommended to run through 3V3(OUT) with a resistor)
-// 3 - `PLED_TYPE_RGB` - This will enable the Player LEDs as addressible RGB LEDs (please not that this has not been implemented yet) 
+// 3 - `PLED_TYPE_RGB` - This will enable the Player LEDs as addressable RGB LEDs (please not that this has not been implemented yet) 
 
 #define PLED_TYPE PLED_TYPE_NONE
 #define PLED1_PIN -1
@@ -147,18 +147,18 @@
 #define ANALOG_ADC_2_MODE DPAD_MODE_RIGHT_ANALOG
 #define ANALOG_ADC_2_INVERT INVERT_NONE
 // This is the I2C Display section (commonly known as the OLED display section).
-// In this section you can specify if a display as been enabled, which pins are assined to it, the block address and speed.
+// In this section you can specify if a display as been enabled, which pins are assigned to it, the block address and speed.
 // The default for `HAS_I2C_DISPLAY` is `1` which enables it.
 // To disable the display you can change `HAS_I2C_DISPLAY` to `-1`.
 // The default `I2C_SDA_PIN` is `0`.
-// The defualt `I2C_SCL_PIN` is `1`.
-// The defualt `I2C_BLOCK` is `12c0`.  
+// The default `I2C_SCL_PIN` is `1`.
+// The default `I2C_BLOCK` is `12c0`.  
 // If you change the `I2C_SDA_PIN` and `I2C_SCL_PIN` pin mapping, you may need to change the `I2C_BLOCK` as well.
-// The defualt `I2C_SPEED` is `400000`.  
+// The default `I2C_SPEED` is `400000`.  
 // This should be more than fast enough for most displays.
 // Some smaller displays (like 0.96" and 1.31") can go up to `800000` or even `1000000`.
 // The default `DISPLAY_FLIP` is `0`.
-// This can be changed to `1` to have the dispaly output flipped.
+// This can be changed to `1` to have the display output flipped.
 // The default `DISPLAY_INVERT` is `0`.
 // This can be changed to `1` to have the color on the display inverted.
 // The default `DISPLAY_SAVER_TIMEOUT` is `0`.
@@ -180,7 +180,7 @@
 // 4 - BUTTON_LAYOUT_VEWLIX - This is the standard 8 button Vewlix layout
 // 5 - BUTTON_LAYOUT_VEWLIX7 - This is the standard 7 button Vewlix layout
 // 6 - BUTTON_LAYOUT_CAPCOM - This is the standard 8 button Capcom layout
-// 7 - BUTTON_LAYOUT_CAPCOM6 - This is the stndard 6 button Capcom layout
+// 7 - BUTTON_LAYOUT_CAPCOM6 - This is the standard 6 button Capcom layout
 // 8 - BUTTON_LAYOUT_SEGA2P - This is the standard 8 button Sega2P layout
 // 9 - BUTTON_LAYOUT_NOIR8 - This is the standard 8 button Noir layout
 // 10 - BUTTON_LAYOUT_KEYBOARDB - This is a WASD keyboard layout that is straight
@@ -309,8 +309,8 @@
 #define KEY_BUTTON_A2   HID_KEY_F2            // A2 / ~ / Capture / ~ / 14 / ~
 
 // Keyboard Host Addon defaults
-#define KEYBOARD_HOST_ENABLED 0
-#define KEYBOARD_HOST_PIN_DPLUS -1
+#define KEYBOARD_HOST_ENABLED 1
+#define KEYBOARD_HOST_PIN_DPLUS 14
 #define KEYBOARD_HOST_PIN_5V -1
 
 // PS Passthrough Host Addon defaults
