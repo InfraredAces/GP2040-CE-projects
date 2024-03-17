@@ -42,12 +42,12 @@ USB Passthrough is available through the PXN-X9's USB port and is external to th
 
 | GPIO Pin | Input/Function     | Note                                        |
 | :------: | :----------------- | ------------------------------------------- |
-|    0     | PIN_BUTTON_B1      | J3 & J8 (20 Pin)                            |
-|    1     | PIN_BUTTON_B3      | J3 & J8 (20 Pin)                            |
-|    2     | PIN_BUTTON_L1      | J3 & J8 (20 Pin)                            |
-|    3     | PIN_BUTTON_B2      | J3 & J8 (20 Pin)                            |
-|    4     | PIN_BUTTON_L2      | J3 & J8 (20 Pin)                            |
-|    5     | PIN_BUTTON_R2      | J3 & J8 (20 Pin)                            |
+|    0     | B1                 | J3 & J8 (20 Pin)                            |
+|    1     | B3                 | J3 & J8 (20 Pin)                            |
+|    2     | L1                 | J3 & J8 (20 Pin)                            |
+|    3     | B2                 | J3 & J8 (20 Pin)                            |
+|    4     | L2                 | J3 & J8 (20 Pin)                            |
+|    5     | R2                 | J3 & J8 (20 Pin)                            |
 |    6     | BOARD_LEDS_PIN     | J2                                          |
 |    7     | Optional Pin 1     | J12 JST PH 2-Pin (Unused with Stock Cables) |
 |    8     | I2C_SDA_PIN        | J11 (Unused with Stock Cables)              |
@@ -55,23 +55,23 @@ USB Passthrough is available through the PXN-X9's USB port and is external to th
 |    10    | Optional Pin 2     | J13 JST PH 2-Pin (Unused with Stock Cables) |
 |    11    | Right Microphone   | J7                                          |
 |    12    | Left Microphone    | J7                                          |
-|    13    | PIN_BUTTON_L3      | J6 & J10                                    |
+|    13    | L3                 | J6 & J10                                    |
 |    14    | USB Host Port (D+) | J7                                          |
 |    15    | USB Host Port (D-) | J7                                          |
-|    16    | PIN_BUTTON_R3      | J6 & J10                                    |
+|    16    | R3                 | J6 & J10                                    |
 |    17    | LED Macro          | J6 (Unused with Stock Cables)               |
-|    18    | PIN_SLIDER_TWO     | J6                                          |
-|    19    | PIN_SLIDER_ONE     | J6                                          |
-|    20    | PIN_BUTTON_A2      | J10 (Unused with Stock Cables)              |
-|    21    | PIN_BUTTON_A1      | J6 & J8 (20 Pin)                            |
-|    22    | PIN_BUTTON_S2      | J5 & J8 (20 Pin) & Web Button               |
-|    23    | PIN_BUTTON_S1      | J5 & J8 (20 Pin)                            |
-|    24    | PIN_DPAD_DOWN      | J4 & J8 (20 Pin)                            |
-|    25    | PIN_DPAD_UP        | J4 & J8 (20 Pin)                            |
-|    26    | PIN_DPAD_LEFT      | J4 & J8 (20 Pin)                            |
-|    27    | PIN_DPAD_RIGHT     | J4 & J8 (20 Pin)                            |
-|    28    | PIN_BUTTON_R1      | J3 & J8 (20 Pin)                            |
-|    29    | PIN_BUTTON_B4      | J3 & J8 (20 Pin)                            |
+|    18    | DPAD Mode RS       | J6                                          |
+|    19    | DPAD Mode LS       | J6                                          |
+|    20    | A2                 | J10 (Unused with Stock Cables)              |
+|    21    | A1                 | J6 & J8 (20 Pin)                            |
+|    22    | S2                 | J5 & J8 (20 Pin) & Web Button               |
+|    23    | S1                 | J5 & J8 (20 Pin)                            |
+|    24    | DPAD DOWN          | J4 & J8 (20 Pin)                            |
+|    25    | DPAD UP            | J4 & J8 (20 Pin)                            |
+|    26    | DPAD LEFT          | J4 & J8 (20 Pin)                            |
+|    27    | DPAD RIGHT         | J4 & J8 (20 Pin)                            |
+|    28    | R1                 | J3 & J8 (20 Pin)                            |
+|    29    | B4                 | J3 & J8 (20 Pin)                            |
 
 ### USB-C Replacement Board
 
@@ -168,9 +168,9 @@ Drag and drop the precompiled firmware (i.e. "GP2040-CE_X.X.X_PXN-X9.uf2") from 
 
 ## Revision History
 
-| Version | Notes           |
-| :------ | :-------------- |
-| v1.0    | Initial Release |
+| Hardware Version | Notes           |
+| :--------------- | :-------------- |
+| v1.0             | Initial Release |
 
 ## Acknowledgements
 
