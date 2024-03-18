@@ -81,10 +81,8 @@
 
 // // Display Settings
 #define HAS_I2C_DISPLAY 1
-#define I2C0_ENABLED 1
-#define I2C0_PIN_SDA 8
-#define I2C0_PIN_SCL 9
-#define DISPLAY_I2C_BLOCK i2c0
+#define I2C_SDA_PIN 8
+#define I2C_SCL_PIN 9
 #define DISPLAY_FLIP 2
 #define DISPLAY_INVERT 0
 #define DISPLAY_SAVER_TIMEOUT 0
