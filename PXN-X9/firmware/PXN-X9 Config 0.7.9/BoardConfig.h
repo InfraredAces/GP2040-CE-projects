@@ -7,6 +7,7 @@
 #define PICO_BOARD_CONFIG_H_
 
 #include "enums.pb.h"
+#include "class/hid/hid.h"
 
 #define BOARD_CONFIG_LABEL "PXN-X9"
 
@@ -52,9 +53,16 @@
 #define KEY_BUTTON_A1   HID_KEY_5             // A1     | Guide  | Home    | PS       | 13     | ~      |
 #define KEY_BUTTON_A2   HID_KEY_2             // A2     | ~      | Capture | ~        | 14     | ~      |
 
-// Settings
-#define DEFAULT_PS4CONTROLLER_TYPE PS4_ARCADESTICK
+// Setting GPIO pins to assigned by add-on
+//
+#define GPIO_PIN_06 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_08 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_09 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_14 GpioAction::ASSIGNED_TO_ADDON
+
 #define DEFAULT_INPUT_MODE_R1 INPUT_MODE_XBONE
+#define DEFAULT_INPUT_MODE_B4 INPUT_MODE_PS5
+#define DEFAULT_PS5AUTHENTICATION_TYPE INPUT_MODE_AUTH_TYPE_USB
 
 // Joystick Slider Add-on
 #define JSLIDER_ENABLED 1
@@ -94,16 +102,12 @@
 #define SPLASH_CHOICE SPLASH_CHOICE_MAIN
 #define SPLASH_DURATION 2000 // Duration in milliseconds
 
-// PS Passthrough Add-on
-#define PSPASSTHROUGH_ENABLED 1
-#define PSPASSTHROUGH_PIN_DPLUS 14
-
-// Xbox One Passthrough Add-on
-#define XBONEPASSTHROUGH_ENABLED 1
+// Peripheral - USB Host
+#define USB_PERIPHERAL_ENABLED 1
+#define USB_PERIPHERAL_PIN_DPLUS 14
+#define USB_PERIPHERAL_PIN_5V -1
 
 // Keyboard Mapping Configuration
 #define KEYBOARD_HOST_ENABLED 1
-#define KEYBOARD_HOST_PIN_DPLUS 14
-#define KEYBOARD_HOST_PIN_5V -1
 
 #endif
